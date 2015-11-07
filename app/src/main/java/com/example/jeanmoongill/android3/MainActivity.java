@@ -20,6 +20,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Button btn_long;
     private Button btn_rhythm;
     private Button btn_cancel;
+    private Button btn_stop;
     private Vibrator myVibrator;
     private Context mContext;
 
@@ -39,12 +40,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btn_long = (Button)findViewById(R.id.btn_long);
         btn_rhythm = (Button)findViewById(R.id.btn_rhythm);
         btn_cancel = (Button)findViewById(R.id.btn_cancel);
+        btn_stop = (Button)findViewById(R.id.btn_stop);
 
         btn_hasVibrator.setOnClickListener(this);
         btn_short.setOnClickListener(this);
         btn_long.setOnClickListener(this);
         btn_rhythm.setOnClickListener(this);
         btn_cancel.setOnClickListener(this);
+        btn_stop.setOnClickListener(this);
     }
 
 
@@ -72,6 +75,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.btn_cancel:
                 myVibrator.cancel();
                 Toast.makeText(mContext, "진동 취소", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.btn_stop:
+                myVibrator.cancel();
+                Toast.makeText(mContext,"stop",Toast.LENGTH_SHORT).show();
         }
     }
 }

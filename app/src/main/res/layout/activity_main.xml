@@ -16,7 +16,7 @@
         android:id="@+id/btn_short"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:tet="진동"
+        android:text="진동"
         />
     <Button
         android:id="@+id/btn_long"
@@ -30,10 +30,19 @@
         android:layout_height="wrap_content"
         android:text="2진"
         />
+
     <Button
         android:id="@+id/btn_cancel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="진동 취소"
         />
+
+    <Button
+        android:id="@+id/btn_stop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="진동정지"
+        />
+
 </LinearLayout>
