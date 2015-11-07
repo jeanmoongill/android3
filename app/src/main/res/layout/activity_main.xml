@@ -1,11 +1,39 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
     android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
 
-    <TextView android:text="@string/hello_world" android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/btn_hasVibrator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="진동 유무"
+        />
 
-</RelativeLayout>
+    <Button
+        android:id="@+id/btn_short"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:tet="진동"
+        />
+    <Button
+        android:id="@+id/btn_long"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="장진동"
+       />
+    <Button
+        android:id="@+id/btn_rhythm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2진"
+        />
+    <Button
+        android:id="@+id/btn_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="진동 취소"
+        />
+</LinearLayout>
