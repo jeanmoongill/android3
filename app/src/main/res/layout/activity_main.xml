@@ -9,20 +9,20 @@
         android:id="@+id/btn_hasVibrator"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="진동 유무"
+        android:background="@drawable/ic_launcher"
         />
 
     <Button
         android:id="@+id/btn_short"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="진동"
+        android:background="@drawable/black"
         />
     <Button
         android:id="@+id/btn_long"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="장진동"
+        android:background="@drawable/red"
        />
     <Button
         android:id="@+id/btn_rhythm"
